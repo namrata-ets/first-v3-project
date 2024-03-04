@@ -18,13 +18,23 @@
             Email: {{ user.email }}
           </q-item-section>
         </q-item>
+
+        <q-item clickable v-ripple>
+          <q-item-section>
+            Company Name: {{ user.company.name }}
+          </q-item-section>
+        </q-item>
+
+        <q-item clickable v-ripple>
+          <q-item-section>
+            Phone No: {{ user.phone }}
+          </q-item-section>
+        </q-item>
       </q-list>
     </div>
   </template>
 
   <script setup>
-  import { defineProps } from 'vue';
-
   const props = defineProps({
     user: Object
   });
@@ -36,7 +46,7 @@
   }
 
   .item-section {
-    border-color: blue;
+    border-color: rgb(221, 224, 12);
     border-style: double;
   }
   </style>

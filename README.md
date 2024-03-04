@@ -1,4 +1,5 @@
 # first-v3-project (first-v3-project)
+Fetching data from REST API JSONPlaceholder
 
 first quasar vue3 project for fetching data from API
 
